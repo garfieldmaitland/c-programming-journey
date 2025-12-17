@@ -65,7 +65,7 @@ My personal coding standards for consistency and readability.
 
 
 ### Structs and Custom Types
-- Use `PascalCase
+- Use `PascalCase`
 - Example: `StudentRecord`, `Node`, `FileBuffer`
 - Note: I will revisit this convention. I know Linus Torvalds has an opinion on this and other projects have another opinion
 
