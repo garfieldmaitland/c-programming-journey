@@ -24,7 +24,14 @@ size_t my_strlen(const char *str) {
 
 int main() {
     // 40 character sha-1 hexanumeric git commit hash
-    char str[] = "bc4dfse3a7f9e2d1c8b6a5e4f3d2c1b0a9e8d7c6" 
+    char str[] = "bc4dfse3a7f9e2d1c8b6a5e4f3d2c1b0a9e8d7c6";
+    
+    printf("String: %\n", str);
+    // % indicates the start of a format specifier
+    // z is a length modifier that is "size-aware" for different system architecures (32/64 bit)
+    // u means the value is an unsigned decimal integer
+    printf("Length: %zu\n", my_strlen(str))
 
+    return 0;
 }
 
