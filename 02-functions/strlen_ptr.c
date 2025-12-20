@@ -32,6 +32,8 @@ int main() {
     // u means the value is an unsigned decimal integer
     printf("Length: %zu\n", my_strlen(str))
 
+    // We return 0 to indicate the program execute successfully
+    // Non-zero values like return 1 or return -1, indicates an error,failue, or abnormal termination
     return 0;
 }
 
