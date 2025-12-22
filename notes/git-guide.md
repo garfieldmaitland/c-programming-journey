@@ -8,18 +8,20 @@ My personal git and github workflow for repository management
 - cd ~/dev/current-project
 - git checkout main
 - git pull origin main
-- git checkout -b feature/the-feature-name
+- git checkout -b feature/the-feature-name # Work on this branch
 
 ### === DURING SESSION ===
 - git status
 - git add -p
-- git commit -m "Add X functionality"
+- git commit -m "Add X functionality" # You are commiting to the local branch
+- git push origin feature/the-feature-name # You are pushing your work to the remote branch
 
 ### === END SESSION - SUCCESS ===
-- git checkout main
-- git merge feature/the-feature-name
-- git push origin main
-- git branch -d feature/the-feature-name # Clean up
+- git checkout main # You are now back on the main local branch
+- git merge feature/the-feature-name # You merge the local branch to the main branch
+- git push origin main # You push the now current main branch to the remote repo
+- git branch -d feature/the-feature-name # Clean up. You delete the local branch
+- git push origin --delete feature/the-feature-name # Remote clean up. You delete the remote branch
 
 ### === END SESSION - NOT SURE YET ===
 - git push origin feature/the-feature-name # Backup to remote
