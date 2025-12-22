@@ -3,16 +3,16 @@
 My personal git and github workflow for repository management
 
 ## Workflow
-`
+
 ### === START SESSION ===
-cd ~/dev/current-project
-git checkout main
+- cd ~/dev/current-project
+- git checkout main
 git pull origin main
 git checkout -b feature/the-feature-name
 
 ### === DURING SESSION ===
-git status
-git add -p
+- git status
+- git add -p
 git commit -m "Add X functionality"
 
 ### === END SESSION - SUCCESS ===
@@ -34,7 +34,7 @@ git branch -D feature/the-feature-name
 git branch -a # Local branches
 git branch -h # Branch flag explanations
 git help branch # Swap branch with another command for more details about it
-`
+
 
 
 
