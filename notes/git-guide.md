@@ -7,33 +7,33 @@ My personal git and github workflow for repository management
 ### === START SESSION ===
 - cd ~/dev/current-project
 - git checkout main
-git pull origin main
-git checkout -b feature/the-feature-name
+- git pull origin main
+- git checkout -b feature/the-feature-name
 
 ### === DURING SESSION ===
 - git status
 - git add -p
-git commit -m "Add X functionality"
+- git commit -m "Add X functionality"
 
 ### === END SESSION - SUCCESS ===
-git checkout main
-git merge feature/the-feature-name
-git push origin main
-git branch -d feature/the-feature-name # Clean up
+- git checkout main
+- git merge feature/the-feature-name
+- git push origin main
+- git branch -d feature/the-feature-name # Clean up
 
 ### === END SESSION - NOT SURE YET ===
-git push origin feature/the-feature-name # Backup to remote
-# Leave branch, come back later
+- git push origin feature/the-feature-name # Backup to remote
+- # Leave branch, come back later
 
 ### === END SESSION - FAILED ===
-git checkout main
-git branch -D feature/the-feature-name 
-# Or just leave it, delete later
+- git checkout main
+- git branch -D feature/the-feature-name 
+- # Or just leave it, delete later
 
 ## Pro Tips
-git branch -a # Local branches
-git branch -h # Branch flag explanations
-git help branch # Swap branch with another command for more details about it
+- git branch -a # Local branches
+- git branch -h # Branch flag explanations
+- git help branch # Swap branch with another command for more details about it
 
 
 
