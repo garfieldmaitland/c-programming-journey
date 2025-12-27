@@ -18,7 +18,7 @@ My personal git and github workflow for repository management
 
 ### === END SESSION - SUCCESS ===
 - git checkout main # You are now back on the main local branch
-- git merge feature/the-feature-name # You merge the local branch to the main branch
+- git merge feature/the-feature-name # You merge the local brancch to the main branch
 - git push origin main # You push the now current main branch to the remote repo
 - git branch -d feature/the-feature-name # Clean up. You delete the local branch
 - git push origin --delete feature/the-feature-name # Remote clean up. You delete the remote branch
@@ -80,5 +80,25 @@ My personal git and github workflow for repository management
 - Examples: `c-programming-journey`, `data-structures-in-c`, `personal-shell`
 
 
-### Branch Naming
-- Use `kebab-case`
+## Remote Conventions
+- git push origin main # Push "main" branch to "origin" remote repository
+- git push origin feature-branch # Push "feature-branch" to "origin"
+- git push backup main # Push "main" to a different remote called "backup"
+- git push # Pushes current branch to its tracked remote (origin/main)
+- git remote -v # See remote repositories
+- git remote add <name> <url> # Add a new remote
+- git remote add backup https://example.com/repo.git # Add new remote repo example
+- git remote remove <name> # Remove a remote repo
+- git remote rename <old-name> <new-name> # Rename a remote repo
+- git remote set-url <name> <new-url> # Change a remote's URL
+- git remote rename origin github # Example of rename of remote
+- git push origin main # Push to GitHub. Already initalized to it
+- git push gitlab main # Push to GitLab
+- git push bitbucket main # Push to Bitbucket
+- git config --global alias.pushall '!git push origin main && git push gitlab main && git push bitbucket main' # Create an alias that pushes to all remotes
+- git pushall # Pushes to all three platforms
+- git remote show origin # Show detailed info about a remote
+- git init --bare /path/to/repo.git # Self host your own Git server on a server or NAS
+- git remote add homeserver user@192.168.1.100:/path/to/repo.git # On your own local machine
+- git push homeserver main # Push to your own home server, for privacy and control
+- Name Conventions: `upstream` Original repo you forked from (in open source),`backup` Backup remote (GitLab, Bitbucket, private server), `production` Production deployment remote, `staging` Staging deployment remote
