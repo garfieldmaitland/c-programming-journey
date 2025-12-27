@@ -1,6 +1,6 @@
 /* 
- * strlen_ptr.c
- * My custom pointer based string length function
+ * strlen_array.c
+ * My custom array based string length function
  * Author: Garfield Maitland
  * Date: December 22nd 2025
  */
