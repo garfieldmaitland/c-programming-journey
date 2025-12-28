@@ -14,9 +14,9 @@
 
 #include <stdio.h> // Standard Input Output Header
 
-int add(int a, int b); // function prototype/declaration. The compiler needs to see that this function exist
+int add_number(int a, int b); // function prototype/declaration. The compiler needs to see that this function exist
 
-int main(){
+int main(void){
 	int result = add(5, 3); // function call
 	printf("%d\n",result);
 	return 0; // explicit success
