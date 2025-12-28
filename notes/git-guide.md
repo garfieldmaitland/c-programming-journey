@@ -102,3 +102,25 @@ My personal git and github workflow for repository management
 - git remote add homeserver user@192.168.1.100:/path/to/repo.git # On your own local machine
 - git push homeserver main # Push to your own home server, for privacy and control
 - Name Conventions: `upstream` Original repo you forked from (in open source),`backup` Backup remote (GitLab, Bitbucket, private server), `production` Production deployment remote, `staging` Staging deployment remote
+
+## Git Complete Workflow Life Cycle
+
+### Day 1: Pull from origin and create branch
+- git checkout main
+- git pull origin main # Pull updates from the remote origin branch, to your local main branch
+- git checkout -b feature/the-feature-name # Local created
+- git push origin feature/the-feature-name # Remote created
+
+### Day 1-3: Work on it
+- git commit -m "Progress" # Update local branch
+- git push origin feature/the-feature-name # Update remote branch
+
+### Day 3: Merge and cleanup
+- git checkout main # Navigate back to your main local branch
+- git merge main feature/the-feature-name # Merge in the changes from your feature branch to the main branch
+- git push origin main # Update remote origin branch, with the merged local changes on your main branch
+
+### Day 3: DELETE both local and remote
+- git branch -d feature/the-feature-name # Delete local feature branch
+- git push origin --delet feature/add-validation # Delete remote feature branch
+- The result is a clean local and remote repository, with the latest changes in your local main branch, and remote origin branch
