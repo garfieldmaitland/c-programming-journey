@@ -124,3 +124,4 @@ My personal git and github workflow for repository management
 - git branch -d feature/the-feature-name # Delete local feature branch
 - git push origin --delet feature/add-validation # Delete remote feature branch
 - The result is a clean local and remote repository, with the latest changes in your local main branch, and remote origin branch
+- git has octopus merge: git merge <branch1> <branch2> <branch3> ...
