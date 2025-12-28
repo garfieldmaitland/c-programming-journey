@@ -119,6 +119,7 @@ My personal git and github workflow for repository management
 - git checkout main # Navigate back to your main local branch
 - git merge main feature/the-feature-name # Merge in the changes from your feature branch to the main branch
 - git push origin main # Update remote origin branch, with the merged local changes on your main branch
+- Go to GitHub and manually review, approve and merge the branch
 
 ### Day 3: DELETE both local and remote
 - git branch -d feature/the-feature-name # Delete local feature branch
