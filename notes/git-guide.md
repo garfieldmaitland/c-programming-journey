@@ -126,3 +126,8 @@ My personal git and github workflow for repository management
 - git push origin --delet feature/add-validation # Delete remote feature branch
 - The result is a clean local and remote repository, with the latest changes in your local main branch, and remote origin branch
 - git has octopus merge: git merge <branch1> <branch2> <branch3> ...
+
+### Updated Workflow
+- New: Push branch, create PR, merge via GitHub
+- git push origin feature/the-feature-name
+- Then: Use GitHub web interface to merge
