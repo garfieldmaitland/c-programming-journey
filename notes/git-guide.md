@@ -132,3 +132,4 @@ My personal git and github workflow for repository management
 - git push origin feature/the-feature-name
 - Then: Use GitHub web interface to merge
 - Then: Delete the local branch (if needed)
+- git fetch --prune # Sometimes the local repo and the remote repo can become stale/out of sync state. Use this command to refresh
